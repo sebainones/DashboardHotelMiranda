@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "name": "Karlie Oosthout de Vree",
+        "order": "05/11/2020",
+        "checkIn": "03/03/2021",
+        "checkOut": "20/07/2020",
+        "request": [
+            {},
+            {}
+        ],
+        "roomType": "Room 6",
+        "status": "Canceled"
+    },
+    {
+        "id": 2,
+        "name": "Marquita Carcas",
+        "order": "22/01/2021",
+        "checkIn": "16/06/2020",
+        "checkOut": "01/04/2021",
+        "request": [
+            {},
+            {}
+        ],
+        "roomType": "Room 2",
+        "status": "Pending"
+    },
+    {
+        "id": 3,
+        "name": "Nealson Pentycross",
+        "order": "09/10/2020",
+        "checkIn": "06/09/2020",
+        "checkOut": "31/07/2020",
+        "request": [],
+        "roomType": "Room 1",
+        "status": "Booked"
+    },
+    {
+        "id": 4,
+        "name": "Salli Sirmon",
+        "order": "20/08/2020",
+        "checkIn": "07/03/2021",
+        "checkOut": "13/10/2020",
+        "request": [],
+        "roomType": "Room 6",
+        "status": "Pending"
+    },
+    {
+        "id": 5,
+        "name": "Demeter Sinkings",
+        "order": "07/10/2020",
+        "checkIn": "10/07/2020",
+        "checkOut": "13/06/2020",
+        "request": [
+            {},
+            {}
+        ],
+        "roomType": "Room 4",
+        "status": "Refund"
+    },
+    {
+        "id": 6,
+        "name": "Constancy Coucher",
+        "order": "26/03/2021",
+        "checkIn": "23/06/2020",
+        "checkOut": "20/03/2021",
+        "request": [
+            {},
+            {}
+        ],
+        "roomType": "Room 4",
+        "status": "Canceled"
+    },
+    {
+        "id": 7,
+        "name": "Amalie Switsur",
+        "order": "04/12/2020",
+        "checkIn": "16/05/2020",
+        "checkOut": "08/03/2021",
+        "request": [
+            {},
+            {}
+        ],
+        "roomType": "Room 6",
+        "status": "Refund"
+    },
+    {
+        "id": 8,
+        "name": "Ronalda Retter",
+        "order": "18/02/2021",
+        "checkIn": "26/10/2020",
+        "checkOut": "16/08/2020",
+        "request": [],
+        "roomType": "Room 4",
+        "status": "Canceled"
+    },
+    {
+        "id": 9,
+        "name": "Griselda Caudell",
+        "order": "21/01/2021",
+        "checkIn": "04/05/2020",
+        "checkOut": "21/02/2021",
+        "request": [],
+        "roomType": "Room 1",
+        "status": "Booked"
+    },
+    {
+        "id": 10,
+        "name": "Bria Malden",
+        "order": "12/07/2020",
+        "checkIn": "16/06/2020",
+        "checkOut": "05/04/2021",
+        "request": [
+            {}
+        ],
+        "roomType": "Room 4",
+        "status": "Pending"
+    }
+]

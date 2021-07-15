@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "name": "Radcliffe Rohloff",
+        "bedType": "Single bed",
+        "floor": "B-1",
+        "facilities": [
+            {}
+        ],
+        "rate": 189,
+        "status": "Available"
+    },
+    {
+        "id": 2,
+        "name": "Aksel Sollowaye",
+        "bedType": "Single double",
+        "floor": "A-3",
+        "facilities": [
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "rate": 125,
+        "status": "Booked"
+    },
+    {
+        "id": 3,
+        "name": "Rhea Polino",
+        "bedType": "Single double",
+        "floor": "C-2",
+        "facilities": [
+            {},
+            {},
+            {},
+            {}
+        ],
+        "rate": 169,
+        "status": "Booked"
+    },
+    {
+        "id": 4,
+        "name": "Obadiah Dowthwaite",
+        "bedType": "Single bed",
+        "floor": "A-1",
+        "facilities": [
+            {},
+            {},
+            {}
+        ],
+        "rate": 141,
+        "status": "Booked"
+    },
+    {
+        "id": 5,
+        "name": "Lyda Potapczuk",
+        "bedType": "Triple bed",
+        "floor": "B-3",
+        "facilities": [
+            {}
+        ],
+        "rate": 105,
+        "status": "Booked"
+    },
+    {
+        "id": 6,
+        "name": "Gerri Cuddy",
+        "bedType": "Triple bed",
+        "floor": "B-2",
+        "facilities": [
+            {},
+            {},
+            {},
+            {},
+            {}
+        ],
+        "rate": 199,
+        "status": "Available"
+    },
+    {
+        "id": 7,
+        "name": "Jonas Petrusch",
+        "bedType": "Double bed",
+        "floor": "A-1",
+        "facilities": [
+            {},
+            {}
+        ],
+        "rate": 104,
+        "status": "Available"
+    },
+    {
+        "id": 8,
+        "name": "Edgard Gill",
+        "bedType": "Single bed",
+        "floor": "A-1",
+        "facilities": [
+            {},
+            {},
+            {}
+        ],
+        "rate": 164,
+        "status": "Booked"
+    },
+    {
+        "id": 9,
+        "name": "Marjory Beddoe",
+        "bedType": "Double bed",
+        "floor": "A-1",
+        "facilities": [
+            {},
+            {},
+            {}
+        ],
+        "rate": 174,
+        "status": "Available"
+    },
+    {
+        "id": 10,
+        "name": "Jeanette Puddle",
+        "bedType": "Single double",
+        "floor": "A-1",
+        "facilities": [
+            {},
+            {},
+            {},
+            {}
+        ],
+        "rate": 185,
+        "status": "Available"
+    }
+]
