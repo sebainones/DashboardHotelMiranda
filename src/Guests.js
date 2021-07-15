@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import guests from "../src/jsons/guests.json"
 import styled, {css} from "styled-components"
@@ -21,7 +22,7 @@ function Guests() {
 
     console.log(guests);
     return (
-        <>
+        <div>
             <div>
                 <Title>Guests</Title>
                 <Title primary>Guests</Title>
@@ -37,7 +38,7 @@ function Guests() {
                 <p>{guests[1].status}</p>
 
             </div>
-        </>
+        </div>
     )
 }
 

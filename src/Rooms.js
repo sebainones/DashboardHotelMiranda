@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import {
     BrowserRouter as Router,
@@ -19,7 +20,7 @@ function Rooms() {
     ])
 
     return (
-        <>
+        <div>
             <h1>Rooms</h1>
             <ul>
                 {rooms.map((element, index) => 
@@ -29,7 +30,7 @@ function Rooms() {
                 )}
             </ul>
 
-        </>
+        </div>
     )
 }
 

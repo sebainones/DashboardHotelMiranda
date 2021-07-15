@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import {
     BrowserRouter as Router,
@@ -21,7 +22,7 @@ function Dashboard() {
         align-content: center;
         `;
     return (
-        <>
+        <div>
             <DashboardDiv>
 
             <h1>Dashboard</h1>
@@ -35,7 +36,7 @@ function Dashboard() {
             </DashboardDiv>
 
 
-        </>
+        </div>
     )
 }
 

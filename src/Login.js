@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState, useContext } from "react";
 import {
     BrowserRouter as Router,
@@ -28,7 +29,7 @@ function Login(props) {
     }
     
     return (
-        <>
+        <div>
             <h1>Login</h1>
             <form onSubmit={(e) => loginSubmit(e)}>
 
@@ -39,7 +40,7 @@ function Login(props) {
             <button >Log in</button>
             </form>
 
-        </>
+        </div>
     )
 }
 

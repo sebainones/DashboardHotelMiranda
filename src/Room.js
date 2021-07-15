@@ -1,3 +1,5 @@
+
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import {
     useParams
@@ -8,9 +10,9 @@ function Room() {
     let { id } = useParams();
 
     return (
-        <>
+        <div>
             <h1>{ id }</h1>
-        </>
+        </div>
     )
 }
 

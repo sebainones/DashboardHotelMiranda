@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import styled, { css } from "styled-components"
 
@@ -10,11 +11,11 @@ function NavbarHorizontal() {
         `;
 
     return (
-        <>
+        <div>
             <HorzontalDiv>
                 <h1>NavbarHorizontal</h1>
             </HorzontalDiv>
-        </>
+        </div>
     )
 }
 

@@ -62,12 +62,11 @@ function App() {
 
   if (!authenticated) {
     return (
-      <>
         <AuthenticateContext.Provider value={authenticated}>
           <Login authenticate={authenticate} />
 
         </AuthenticateContext.Provider>
-      </>)
+      )
   }
     
 

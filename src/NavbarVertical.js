@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components"
@@ -17,7 +18,7 @@ function NavbarVertical() {
 
     
     return (
-        <>
+        <div>
 
                 <VerticalDiv>
                 <h1>NavbarVertical</h1>
@@ -45,7 +46,7 @@ function NavbarVertical() {
                     </nav>
                 </VerticalDiv>
 
-        </>
+        </div>
     )
 }
 
