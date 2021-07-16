@@ -1,30 +1,43 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect } from "react";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    NavLink,
     useHistory
 } from "react-router-dom";
 
 function Login(props) {
-    
-    const loginUser = {
-        'user': 'Juan',
-        'pass': 'asd123'
-    }
+    let history = useHistory()
+    const loginUsers = [
+        {
+            'email': 'admin@admin.com',
+            'pass': 'admin'
+        },
+        {
+            'email': 'pedro@gmail.com',
+            'pass': 'deltoro'
+        },
+    ]
+
+    useEffect(() => {
+        if (props.authenticated) {
+            history.push("/")
+        }
+    }, [props.authenticated])
 
     let loginSubmit = (e) => {
         e.preventDefault()
         let passInput = document.getElementById('passwordInput')
-        let userInput = document.getElementById('usernameInput')
+        let userInput = document.getElementById('emailInput')
 
-        if (passInput.value === loginUser.pass && userInput.value === loginUser.user) {
-            props.authenticate(true)
-        } else {
-            alert("Error")
-        }
+        // loginUsers.map(element => {
+            for (let i = 0; i < loginUsers.length; i++){
+
+                if (passInput.value === loginUsers[i].pass && userInput.value === loginUsers[i].email) {
+                    props.authenticate(true)
+                    break;
+                } else {
+                    alert("Error")
+                }
+            }
+        // })
     }
     
     return (
@@ -32,11 +45,11 @@ function Login(props) {
             <h1>Login</h1>
             <form onSubmit={(e) => loginSubmit(e)}>
 
-            <label>Username</label>
-            <input id="usernameInput" type="username"></input>
+            <label>Email</label>
+            <input id="emailInput" type="email"></input>
             <label>Password</label>
             <input id="passwordInput" type="password"></input>
-            <button >Log in</button>
+            <button id="login-button" >Log in</button>
             </form>
 
         </>

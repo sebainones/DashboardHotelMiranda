@@ -3,10 +3,7 @@ import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  NavLink,
-  useHistory
+  Route
 } from "react-router-dom";
 import { Dashboard } from './Dashboard';
 import { Rooms } from './Rooms';
@@ -15,98 +12,130 @@ import { NavbarHorizontal } from './NavbarHorizontal';
 import { NavbarVertical } from './NavbarVertical';
 import { Bookings } from './Bookings';
 import { Concierge } from './Concierge';
-import { Reviews } from './Reviews';
 import { Room } from './Room';
 import { Login } from './Login';
+import { Register } from './Register';
 import { PrivateRoute } from './PrivateRoute';
-import styled, { css } from "styled-components"
+import styled from "styled-components"
+import { Messages } from './Messages';
+import { Employee } from './Employee';
+import { NewEmployee } from './NewEmployee';
+import { NewRoom } from './NewRoom';
+
 
 
 export const AuthenticateContext = React.createContext();
 
+
 function App() {
 
   const GlobalDiv = styled.div`
-        background-color:green;
+        background-color: #F8F8F8 ;
         width: 100%;
-        height: 500px;
         display: flex;
-        justify-content: space-between;
-        align-content: center;
+        `;
+  
+  const ContentDiv = styled.div`
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        `;
+  
+  const HorizontalDiv = styled.div`
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 50px
         `;
 
 
   const [authenticated, setAuthenticated] = useState(false);
 
+
   let asd = localStorage.getItem('authenticated')
 
   useEffect(() => {
-    // Check to see if previously logged in
     if (localStorage.getItem('authenticated')) {
       setAuthenticated(true);
     }
-    
   }, asd);
 
   const authenticate = loggedIn => {
-    // Handles both login and logout
     setAuthenticated(loggedIn);
     if (loggedIn) {
-      // login is stored
       localStorage.setItem('authenticated', '1');
     } else {
-      // logout is stored
       localStorage.removeItem('authenticated');
     }
   };
 
-  if (!authenticated) {
-    return (
-      <>
-        <AuthenticateContext.Provider value={authenticated}>
-          <Login authenticate={authenticate} />
+  const navbarHor = () => {
+    if (authenticated) {
+      return (
+        <HorizontalDiv>
+          <NavbarHorizontal />
+        </HorizontalDiv>
 
-        </AuthenticateContext.Provider>
-      </>)
+      )
+    }
   }
-    
+
 
   return (
     <div className="App">
 
-        <Router>
-          <NavbarHorizontal />
+      <Router>
         <GlobalDiv>
-            <NavbarVertical />
+          <NavbarVertical value={authenticated}/>
+          <ContentDiv>
+            {navbarHor()}
             <Switch>
-              <PrivateRoute exact path="/">
-                  <Dashboard />
-              </PrivateRoute>
-                <Route path="/rooms">
-                  <Rooms />
+              <AuthenticateContext.Provider value={authenticated}>
+
+
+                <PrivateRoute exact path="/">
+                    <Dashboard />
+                </PrivateRoute>
+                <PrivateRoute path="/rooms">
+                    <Rooms />
+                  </PrivateRoute>
+                  <PrivateRoute path="/bookings">
+                    <Bookings />
+                  </PrivateRoute>
+                  <PrivateRoute path="/concierge">
+                    <Concierge />
+                  </PrivateRoute>
+                  <PrivateRoute path="/messages">
+                    <Messages />
+                  </PrivateRoute>
+                  <Route path="/register">
+                      <Register />
+                  </Route>
+                  <PrivateRoute path="/newEmployee">
+                    <NewEmployee />
+                  </PrivateRoute>
+                  <PrivateRoute path="/newRoom">
+                    <NewRoom />
+                  </PrivateRoute>
+                  <PrivateRoute path="/room/:id">
+                    <Room />
+                  </PrivateRoute>
+                  <PrivateRoute path="/employee/:id">
+                    <Employee />
+                  </PrivateRoute>
+                <Route path="/login">
+                  <Login authenticate={authenticate} authenticated={authenticated}/>
                 </Route>
-                <Route path="/guests">
-                  <Guests />
-                </Route>
-                <Route path="/bookings">
-                  <Bookings />
-                </Route>
-                <Route path="/concierge">
-                  <Concierge />
-                </Route>
-                <Route path="/reviews">
-                  <Reviews />
-                </Route>
-                <Route path="/room/:id">
-                  <Room />
-              </Route>
-              <Route path="/login">
-                <Login />
-              </Route>
+              </AuthenticateContext.Provider>
 
             </Switch>
+          </ContentDiv>
+
           </GlobalDiv>
-        </Router>
+      </Router>
+      
 
     </div>
     );
