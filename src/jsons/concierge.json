@@ -1,82 +1,82 @@
 [
     {
         "id": 1,
-        "name": "Mirelle Guyer",
-        "jobDesc": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-        "schedule": "Mon",
-        "phone": "449-561-6897",
-        "status": "Quit"
+        "name": "Gwynne Roizin",
+        "dischargeDate": "17/05/2021",
+        "jobDesc": "Maintenance",
+        "phone": "698-501-1402",
+        "status": "Active"
     },
     {
         "id": 2,
-        "name": "Faustina Zammett",
-        "jobDesc": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-        "schedule": "Sun",
-        "phone": "397-266-4310",
-        "status": "Fired"
+        "name": "Jeremy Gumley",
+        "dischargeDate": "01/05/2020",
+        "jobDesc": "Maintenance",
+        "phone": "917-394-4496",
+        "status": "Inactive"
     },
     {
         "id": 3,
-        "name": "Anjela Meadmore",
-        "jobDesc": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-        "schedule": "Sat",
-        "phone": "948-452-1536",
-        "status": "Quit"
+        "name": "Kyrstin Kopisch",
+        "dischargeDate": "24/04/2020",
+        "jobDesc": "Chef",
+        "phone": "661-360-2060",
+        "status": "Active"
     },
     {
         "id": 4,
-        "name": "Sayer Spurdens",
-        "jobDesc": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-        "schedule": "Sat",
-        "phone": "136-392-5627",
+        "name": "Albina Clappison",
+        "dischargeDate": "19/12/2021",
+        "jobDesc": "Maintenance",
+        "phone": "443-445-5968",
         "status": "Inactive"
     },
     {
         "id": 5,
-        "name": "Rabbi Yoslowitz",
-        "jobDesc": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-        "schedule": "Fri",
-        "phone": "876-544-7799",
-        "status": "Quit"
+        "name": "Tamarra Lathbury",
+        "dischargeDate": "02/10/2020",
+        "jobDesc": "Maintenance",
+        "phone": "428-798-8905",
+        "status": "Active"
     },
     {
         "id": 6,
-        "name": "Sidnee Jeste",
-        "jobDesc": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-        "schedule": "Thu",
-        "phone": "530-814-6671",
-        "status": "Fired"
+        "name": "Dotty Housden",
+        "dischargeDate": "26/07/2021",
+        "jobDesc": "Maintenance",
+        "phone": "327-456-5158",
+        "status": "Inactive"
     },
     {
         "id": 7,
-        "name": "Zsazsa McAlester",
-        "jobDesc": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-        "schedule": "Sun",
-        "phone": "511-778-5414",
-        "status": "Quit"
+        "name": "Claudian Bertome",
+        "dischargeDate": "28/12/2020",
+        "jobDesc": "Receptionist",
+        "phone": "775-654-0751",
+        "status": "Inactive"
     },
     {
         "id": 8,
-        "name": "Aimee Load",
-        "jobDesc": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-        "schedule": "Thu",
-        "phone": "217-935-4182",
-        "status": "Fired"
+        "name": "Nathalie Beneteau",
+        "dischargeDate": "10/10/2021",
+        "jobDesc": "Maintenance",
+        "phone": "718-572-6569",
+        "status": "Active"
     },
     {
         "id": 9,
-        "name": "Ernestine Mival",
-        "jobDesc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-        "schedule": "Wed",
-        "phone": "763-885-8105",
-        "status": "Quit"
+        "name": "Kylie Hannond",
+        "dischargeDate": "28/04/2021",
+        "jobDesc": "Room Service",
+        "phone": "236-430-0909",
+        "status": "Inactive"
     },
     {
         "id": 10,
-        "name": "Rebecca Baszkiewicz",
-        "jobDesc": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
-        "schedule": "Sat",
-        "phone": "627-634-0808",
+        "name": "Russell Haggar",
+        "dischargeDate": "28/02/2021",
+        "jobDesc": "Cleaning",
+        "phone": "895-978-6391",
         "status": "Active"
     }
 ]
