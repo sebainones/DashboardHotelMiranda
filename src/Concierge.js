@@ -1,7 +1,8 @@
+import React, { Component }  from 'react';
 import styled from "styled-components"
 import concierge from "./jsons/concierge.json"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import {
     useHistory
 } from "react-router-dom";
@@ -141,7 +142,7 @@ function Concierge() {
                                 <StatusButton buttonName={element.status} compo="concierge"></StatusButton>
                             </TdRooms>
                             <TdRooms>
-                                <FontAwesomeIcon icon={faEllipsisV} />
+                                {/* <FontAwesomeIcon icon={faEllipsisV} /> */}
                             </TdRooms>
 
                         </TrRooms>

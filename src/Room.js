@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import {
     useParams,
     useHistory
@@ -8,7 +9,7 @@ function Room() {
     let { id } = useParams();
 
     return (
-        <>
+        <div>
             <button onClick={
                 () => {
                     history.push("/rooms")
@@ -16,7 +17,7 @@ function Room() {
             }>Back</button>
 
             <h1>{ id }</h1>
-        </>
+        </div>
     )
 }
 

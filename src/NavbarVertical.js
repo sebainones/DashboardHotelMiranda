@@ -1,7 +1,8 @@
+import React, { Component }  from 'react';
 import { NavLink } from "react-router-dom";
 import styled from "styled-components"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faKey, faUser, faTh, faCalendarCheck, faConciergeBell, faHotel } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faKey, faUser, faTh, faCalendarCheck, faConciergeBell, faHotel } from '@fortawesome/free-solid-svg-icons'
 
 const VerticalDiv = styled.div`
     background-color:blue;
@@ -63,12 +64,12 @@ function NavbarVertical(props) {
 
     if (value) {
         return (
-            <>
+            <div>
 
                 <VerticalDiv>
                     <Logo>
                         <div>
-                            <FontAwesomeIcon icon={faHotel} className="asd" />
+                            {/* <FontAwesomeIcon icon={faHotel} className="asd" /> */}
                         </div>
                         <div>
                             <h1>travl</h1>
@@ -77,33 +78,33 @@ function NavbarVertical(props) {
                     </Logo>
                     <VerticalUl>
                         <li>
-                            <FontAwesomeIcon icon={faTh} />
+                            {/* <FontAwesomeIcon icon={faTh} /> */}
                             <VerticalLi to="/" id="dashboard"> Dashboard</VerticalLi>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faKey} />
+                            {/* <FontAwesomeIcon icon={faKey} /> */}
                             <VerticalLi to="rooms" id="rooms"> Rooms</VerticalLi>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faCalendarCheck} />
+                            {/* <FontAwesomeIcon icon={faCalendarCheck} /> */}
                             <VerticalLi to="bookings" id="bookings"> Bookings</VerticalLi>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faConciergeBell} />
+                            {/* <FontAwesomeIcon icon={faConciergeBell} /> */}
                             <VerticalLi to="concierge" id="concierge"> Concierge</VerticalLi>
                         </li>
                     </VerticalUl>
                 </VerticalDiv>
 
-            </>
+            </div>
         )
     } else {
         return (
-            <>
+            <div>
                 <VerticalDiv>
                     <Logo>
                         <div>
-                            <FontAwesomeIcon icon={faHotel} className="asd" />
+                            {/* <FontAwesomeIcon icon={faHotel} className="asd" /> */}
                         </div>
                         <div>
                             <h1>travl</h1>
@@ -112,16 +113,16 @@ function NavbarVertical(props) {
                     </Logo>
                     <VerticalUl>
                         <li>
-                            <FontAwesomeIcon icon={faTh} />
+                            {/* <FontAwesomeIcon icon={faTh} /> */}
                             <VerticalLi to="/login" data-testid="login-element">Login</VerticalLi>
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faTh} />
+                            {/* <FontAwesomeIcon icon={faTh} /> */}
                             <VerticalLi to="/register" data-testid="register-element" id="register-button-nav">Register</VerticalLi>
                         </li>
                     </VerticalUl>
                 </VerticalDiv>
-            </>
+            </div>
         )
     }
 }

@@ -1,6 +1,7 @@
+
 import styled from "styled-components"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faBell } from '@fortawesome/free-regular-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope, faBell } from '@fortawesome/free-regular-svg-icons'
 import React, { useEffect, useState, useContext } from "react";
 import { ComponentContext } from "./App"
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
@@ -44,7 +45,7 @@ function NavbarHorizontal() {
     }
 
     return (
-        <>
+        <div>
             <GlobalDiv>
 
                 <Title>
@@ -52,15 +53,15 @@ function NavbarHorizontal() {
                 </Title>
                 <Buttons>
                     <NavLink to="messages">
-                        <FontAwesomeIcon icon={faEnvelope} />
+                        {/* <FontAwesomeIcon icon={faEnvelope} /> */}
                     </NavLink>
                     <a href="https://www.google.com">
-                        <FontAwesomeIcon icon={faBell} />
+                        {/* <FontAwesomeIcon icon={faBell} /> */}
                     </a>
 
                 </Buttons>
             </GlobalDiv>
-        </>
+        </div>
     )
 }
 

@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import styled, { css } from "styled-components"
 import { useHistory } from "react-router-dom";
 
@@ -28,9 +29,9 @@ function NewDataButton(props) {
     }
 
     return (
-        <>
+        <div>
             <NewButton data-testid="button-element" onClick={clickedButton}>{props.value}</NewButton>
-        </>
+        </div>
     )
 }
 

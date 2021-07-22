@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import {
     useParams,
     useHistory
@@ -8,7 +9,7 @@ function Employee() {
     let { id } = useParams();
 
     return (
-        <>
+        <div>
             <button onClick={
                 () => {
                     history.push("/concierge")
@@ -16,7 +17,7 @@ function Employee() {
             }>Back</button>
 
             <h1>{id}</h1>
-        </>
+        </div>
     )
 }
 

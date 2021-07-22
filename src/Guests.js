@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import guests from "../src/jsons/guests.json"
 import styled, {css} from "styled-components"
 

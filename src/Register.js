@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import {
     useHistory
 } from "react-router-dom";
@@ -19,7 +20,7 @@ function Register() {
     }
 
     return (
-        <>
+        <div>
             <h1>Register</h1>
             <form onSubmit={(e) => registerSubmit(e)}>
 
@@ -36,7 +37,7 @@ function Register() {
             </form>
 
 
-        </>
+        </div>
     )
 }
 

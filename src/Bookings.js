@@ -1,4 +1,4 @@
-
+import React, { Component }  from 'react';
 function Bookings() {
     return (
         <div>

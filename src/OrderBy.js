@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import styled, { css } from "styled-components"
 
 const OrderSelect = styled.select`
@@ -42,14 +43,14 @@ function OrderBy(props) {
 console.log(props.options);
 
     return (
-        <>
+        <div>
             <OrderSelect >
                 <option hidden>Newest</option>
                 {props.options.map((element, index) => 
                     <option key={index}>{element}</option>
                 )}
             </OrderSelect>
-        </>
+        </div>
     )
 }
 

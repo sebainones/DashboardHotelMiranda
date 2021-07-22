@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import styled, { css } from "styled-components"
 
 const StatButton = styled.button`
@@ -36,9 +37,9 @@ function StatusButton(props) {
 
 
     return (
-        <>
+        <div>
             <StatButton compo={props.compo + props.buttonName} data-testid="button-element">{props.buttonName}</StatButton>
-        </>
+        </div>
     )
 }
 
