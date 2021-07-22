@@ -1,15 +1,8 @@
 import React, { Component }  from 'react';
-import { useEffect, useState } from "react";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect,
-    useHistory,
-    useLocation
+    useHistory
 } from "react-router-dom";
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 function Dashboard() {
     let history = useHistory()

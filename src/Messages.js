@@ -1,10 +1,11 @@
+
 import React, { Component }  from 'react';
-function Bookings() {
+function Messages() {
     return (
         <div>
-            <h1>Bookings</h1>
+            <h1>Messages</h1>
         </div>
     )
 }
 
-export { Bookings }
+export { Messages }

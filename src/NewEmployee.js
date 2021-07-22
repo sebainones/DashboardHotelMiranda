@@ -1,10 +1,11 @@
+
 import React, { Component }  from 'react';
-function Bookings() {
+function NewEmployee() {
     return (
         <div>
-            <h1>Bookings</h1>
+            <h1>NewEmployee</h1>
         </div>
     )
 }
 
-export { Bookings }
+export { NewEmployee }
