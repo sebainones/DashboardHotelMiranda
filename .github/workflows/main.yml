@@ -36,3 +36,7 @@ jobs:
           yarn build
         env:
           CI: false
+
+      # Run Jest tests!
+      - name: Run  tests 🧪
+        run: yarn test
