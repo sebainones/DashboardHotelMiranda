@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import React from 'react';
+// import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { NavbarVertical } from "./NavbarVertical";
 import { createMemoryHistory } from 'history'
