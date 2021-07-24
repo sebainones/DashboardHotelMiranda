@@ -25,5 +25,7 @@ jobs:
           # npm run build
           yarn          
           yarn build
+        env:
+          CI: false
       - name: "Run  tests"
         run: yarn test
