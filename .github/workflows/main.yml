@@ -40,3 +40,15 @@ jobs:
       # Run Jest tests!
       - name: Run  tests 🧪
         run: yarn test
+
+ curl_job:
+    needs: build_React_Hotel_Miranda
+    name: curl
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: curl
+      uses: wei/curl@master
+      with:
+        args: https://sebainones.github.io/ReactTicTacToeApp/
