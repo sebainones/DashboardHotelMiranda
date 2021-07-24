@@ -41,7 +41,7 @@ jobs:
       - name: Run  tests 🧪
         run: yarn test
 
- curl_job:
+  curl_job:
     needs: build_React_Hotel_Miranda
     name: curl
     # The type of runner that the job will run on
