@@ -1,7 +1,8 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
+// https://stackoverflow.com/questions/46056414/getting-404-for-links-with-create-react-app-deployed-to-github-pages
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
