@@ -2,7 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 // https://stackoverflow.com/questions/46056414/getting-404-for-links-with-create-react-app-deployed-to-github-pages
 import {
-  HashRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -86,38 +86,35 @@ function App() {
 
   return (
     <div className="App">
-      <Rooms />
 
-      {/* <Router>
+      <HashRouter>
         <GlobalDiv>
           <NavbarVertical value={authenticated}/>
           <ContentDiv>
             {navbarHor()}
             <Switch>
-              <AuthenticateContext.Provider value={authenticated}>
-
-
-                <PrivateRoute exact path="/">
+              {/* <AuthenticateContext.Provider value={authenticated}> */}
+                <Route exact path="/">
                     <Dashboard />
-                </PrivateRoute>
-                <PrivateRoute path="/rooms">
+                </Route>
+                <Route path="/rooms">
                     <Rooms />
-                  </PrivateRoute>
-                  <PrivateRoute path="/bookings">
+                  </Route>
+                  <Route path="/bookings">
                     <Bookings />
-                  </PrivateRoute>
-                  <PrivateRoute path="/concierge">
+                  </Route>
+                  <Route path="/concierge">
                     <Concierge />
-                  </PrivateRoute>
-                  <PrivateRoute path="/messages">
+                  </Route>
+                  <Route path="/messages">
                     <Messages />
-                  </PrivateRoute>
+                  </Route>
                   <Route path="/register">
                       <Register />
                   </Route>
-                  <PrivateRoute path="/newEmployee">
+                  <Route path="/newEmployee">
                     <NewEmployee />
-                  </PrivateRoute>
+                  </Route>
                   <PrivateRoute path="/newRoom">
                     <NewRoom />
                   </PrivateRoute>
@@ -130,13 +127,13 @@ function App() {
                 <Route path="/login">
                   <Login authenticate={authenticate} authenticated={authenticated}/>
                 </Route>
-              </AuthenticateContext.Provider>
+              {/* </AuthenticateContext.Provider> */}
 
             </Switch>
           </ContentDiv>
 
           </GlobalDiv>
-      </Router> */}
+      </HashRouter>
 
     </div>
     );
