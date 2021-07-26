@@ -93,43 +93,43 @@ function App() {
           <ContentDiv>
             {navbarHor()}
             <Switch>
-              <AuthenticateContext.Provider value={authenticated}>
+              {/* <AuthenticateContext.Provider value={authenticated}> */}
 
 
-                <PrivateRoute exact path="/">
+                <Route exact path="/">
                     <Dashboard />
-                </PrivateRoute>
-                <PrivateRoute path="/rooms">
+                </Route>
+                <Route path="/rooms">
                     <Rooms />
-                  </PrivateRoute>
-                  <PrivateRoute path="/bookings">
+                  </Route>
+                  <Route path="/bookings">
                     <Bookings />
-                  </PrivateRoute>
-                  <PrivateRoute path="/concierge">
+                  </Route>
+                  <Route path="/concierge">
                     <Concierge />
-                  </PrivateRoute>
-                  <PrivateRoute path="/messages">
+                  </Route>
+                  <Route path="/messages">
                     <Messages />
-                  </PrivateRoute>
+                  </Route>
                   <Route path="/register">
                       <Register />
                   </Route>
-                  <PrivateRoute path="/newEmployee">
+                  <Route path="/newEmployee">
                     <NewEmployee />
-                  </PrivateRoute>
-                  <PrivateRoute path="/newRoom">
+                  </Route>
+                  <Route path="/newRoom">
                     <NewRoom />
-                  </PrivateRoute>
-                  <PrivateRoute path="/room/:id">
+                  </Route>
+                  <Route path="/room/:id">
                     <Room />
-                  </PrivateRoute>
-                  <PrivateRoute path="/employee/:id">
+                  </Route>
+                  <Route path="/employee/:id">
                     <Employee />
-                  </PrivateRoute>
+                  </Route>
                 <Route path="/login">
                   <Login authenticate={authenticate} authenticated={authenticated}/>
                 </Route>
-              </AuthenticateContext.Provider>
+              {/* </AuthenticateContext.Provider> */}
 
             </Switch>
           </ContentDiv>
