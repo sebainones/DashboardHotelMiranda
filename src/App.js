@@ -87,20 +87,20 @@ function App() {
   return (
     <div className="App">
 
-      <Router>
-        <GlobalDiv>
+
+<GlobalDiv>
           <NavbarVertical value={authenticated}/>
           <ContentDiv>
             {navbarHor()}
             <Switch>
               {/* <AuthenticateContext.Provider value={authenticated}> */}
+              <Rooms />
 
-
-                <Route exact path="/">
+                {/* <Route exact path="/">
                     <Dashboard />
                 </Route>
                 <Route path="/rooms">
-                    <Rooms />
+                  
                   </Route>
                   <Route path="/bookings">
                     <Bookings />
@@ -128,14 +128,16 @@ function App() {
                   </Route>
                 <Route path="/login">
                   <Login authenticate={authenticate} authenticated={authenticated}/>
-                </Route>
+                </Route> */}
               {/* </AuthenticateContext.Provider> */}
 
             </Switch>
           </ContentDiv>
 
           </GlobalDiv>
-      </Router>
+      {/* <Router>
+       
+      </Router> */}
       
 
     </div>
