@@ -1,6 +1,5 @@
 {
   "name": "dashboard-hotel-miranda",
-  "homepage": "https://sebainones.github.io/DashboardHotelMiranda/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
