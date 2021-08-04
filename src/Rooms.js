@@ -104,7 +104,7 @@ function Rooms() {
         <ContainerRooms>
                 <HeaderRooms>
                     <TabsRooms>
-                        <a href="https://www.google.com">All rooms</a>
+                        <a href="https://www.google.com">All Rooms</a>
                         <a href="https://www.google.com">Available rooms</a>
                         <a href="https://www.google.com">Booked rooms</a>
                     </TabsRooms>
