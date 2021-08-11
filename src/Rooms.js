@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 import styled from "styled-components"
 import rooms from "./jsons/rooms.json"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -89,63 +89,76 @@ const ThRooms = styled.th`
     }
 `
 function Rooms() {
-    
+
     let history = useHistory()
-    let orderArr = ['a','b','c']
+    let orderArr = ['a', 'b', 'c']
 
 
     const clickedRow = (pId) => {
 
         history.push("/room/" + pId)
     }
+  
+    let GetMensajePrincipal = () =>  {        
+        fetch('https://hotelmirandaappservice.azurewebsites.net/')
+        .then(res => res.json())
+        .then((data) => {
+            // this.setState({ mensajePrincipal: data })
+            console.log('Nombres--->');
+            console.log(data);
+            return data;
+        })
+        .catch(console.log);      
+    }
 
+    return (       
 
-    return (
         <ContainerRooms>
-                <HeaderRooms>
-                    <TabsRooms>
-                        <a href="https://www.google.com">All rooms</a>
-                        <a href="https://www.google.com">Available rooms</a>
-                        <a href="https://www.google.com">Booked rooms</a>
-                    </TabsRooms>
-                    <ButtonsRooms>
-                        <NewDataButton buttonName="New" compo="rooms" value="+ New room"></NewDataButton>
-                        <OrderBy options={orderArr} />
-                    </ButtonsRooms>
-                </HeaderRooms>
-            
+            <HeaderRooms>
+                <TabsRooms>
+                    <a href="https://www.google.com">All rooms</a>
+                    <a href="https://www.google.com">Available rooms</a>
+                    <a href="https://www.google.com">Booked rooms</a>
+                    <a onLoad = {GetMensajePrincipal()}href="https://www.google.com">Clickame</a>                    
+                </TabsRooms>
+                <ButtonsRooms>
+                    <NewDataButton buttonName="New" compo="rooms" value="+ New room"></NewDataButton>
+                    <OrderBy options={orderArr} />
+                </ButtonsRooms>
+            </HeaderRooms>
+
             <TableRooms>
                 <thead>
 
-                <TrRoomsHeader>
-                    <ThRooms><input type="checkbox"/></ThRooms>
-                    <ThRooms>Room Name</ThRooms>
-                    <ThRooms>Bed Type</ThRooms>
-                    <ThRooms>Room Floor</ThRooms>
-                    <ThRooms>Facilities</ThRooms>
-                    <ThRooms>Rate</ThRooms>
-                    <ThRooms>Status</ThRooms>
-                    <ThRooms className="options"></ThRooms>
+                    <TrRoomsHeader>
+                        <ThRooms><input type="checkbox" /></ThRooms>
+                        <ThRooms>Room Name</ThRooms>
+                        <ThRooms>Bed Type</ThRooms>
+                        <ThRooms>Room Floor</ThRooms>
+                        <ThRooms>Facilities</ThRooms>
+                        <ThRooms>Rate</ThRooms>
+                        <ThRooms>Status</ThRooms>
+                        <ThRooms className="options"></ThRooms>
                     </TrRoomsHeader>
                 </thead>
                 <tbody>
-                {rooms.map((element, index) =>
-                    <TrRooms key={index}>
-                        <TdRooms><input type="checkbox" /></TdRooms>
-                        <TdRooms onClick={() => clickedRow(element.id)}>{element.name}</TdRooms>
-                        <TdRooms onClick={() => clickedRow(element.id)}>{element.bedType}</TdRooms>
-                        <TdRooms onClick={() => clickedRow(element.id)}>{element.floor}</TdRooms>
-                        <TdRooms onClick={() => clickedRow(element.id)}>Facilities</TdRooms>
-                        <TdRooms onClick={() => clickedRow(element.id)}><b>{element.rate}</b>/night</TdRooms>
-                        <TdRooms >
-                            <StatusButton buttonName={element.status} compo="rooms"></StatusButton>
-                        </TdRooms>
-                        <TdRooms>
-                            {/* <FontAwesomeIcon icon={faEllipsisV} /> */}
-                        </TdRooms>
+                    {rooms.map((element, index) =>
+                        <TrRooms key={index}>
+                            <TdRooms><input type="checkbox" /></TdRooms>
+                            <TdRooms onClick={() => clickedRow(element.id)}>{element.name}</TdRooms>
+                            <TdRooms onClick={() => clickedRow(element.id)}>{element.bedType}</TdRooms>
+                            <TdRooms onClick={() => clickedRow(element.id)}>{element.floor}</TdRooms>
+                            <TdRooms onClick={() => clickedRow(element.id)}>Facilities</TdRooms>
+                            <TdRooms onClick={() => clickedRow(element.id)}><b>{element.rate}</b>/night</TdRooms>
+                            <TdRooms >
+                                <StatusButton buttonName={element.status} compo="rooms"></StatusButton>
+                            </TdRooms>
+                            <TdRooms>
+                                {/* <FontAwesomeIcon icon={faEllipsisV} /> */}
+                            </TdRooms>
 
-                    </TrRooms>
-                )}
+                        </TrRooms>
+                    )}
                 </tbody>
 
             </TableRooms>
