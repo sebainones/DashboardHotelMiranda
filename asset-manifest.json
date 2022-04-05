@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/DashboardHotelMiranda/static/css/main.efc68831.chunk.css",
-    "main.js": "/DashboardHotelMiranda/static/js/main.c47ff7fb.chunk.js",
-    "main.js.map": "/DashboardHotelMiranda/static/js/main.c47ff7fb.chunk.js.map",
-    "runtime-main.js": "/DashboardHotelMiranda/static/js/runtime-main.3ce75374.js",
-    "runtime-main.js.map": "/DashboardHotelMiranda/static/js/runtime-main.3ce75374.js.map",
-    "static/js/2.7e58947f.chunk.js": "/DashboardHotelMiranda/static/js/2.7e58947f.chunk.js",
-    "static/js/2.7e58947f.chunk.js.map": "/DashboardHotelMiranda/static/js/2.7e58947f.chunk.js.map",
-    "static/js/3.fde26d12.chunk.js": "/DashboardHotelMiranda/static/js/3.fde26d12.chunk.js",
-    "static/js/3.fde26d12.chunk.js.map": "/DashboardHotelMiranda/static/js/3.fde26d12.chunk.js.map",
+    "main.css": "/DashboardHotelMiranda/static/css/main.9e888602.chunk.css",
+    "main.js": "/DashboardHotelMiranda/static/js/main.54136c2b.chunk.js",
+    "main.js.map": "/DashboardHotelMiranda/static/js/main.54136c2b.chunk.js.map",
+    "runtime-main.js": "/DashboardHotelMiranda/static/js/runtime-main.c8377ad0.js",
+    "runtime-main.js.map": "/DashboardHotelMiranda/static/js/runtime-main.c8377ad0.js.map",
+    "static/js/2.129b68cb.chunk.js": "/DashboardHotelMiranda/static/js/2.129b68cb.chunk.js",
+    "static/js/2.129b68cb.chunk.js.map": "/DashboardHotelMiranda/static/js/2.129b68cb.chunk.js.map",
+    "static/js/3.84d50aa6.chunk.js": "/DashboardHotelMiranda/static/js/3.84d50aa6.chunk.js",
+    "static/js/3.84d50aa6.chunk.js.map": "/DashboardHotelMiranda/static/js/3.84d50aa6.chunk.js.map",
     "index.html": "/DashboardHotelMiranda/index.html",
-    "static/css/main.efc68831.chunk.css.map": "/DashboardHotelMiranda/static/css/main.efc68831.chunk.css.map",
-    "static/js/2.7e58947f.chunk.js.LICENSE.txt": "/DashboardHotelMiranda/static/js/2.7e58947f.chunk.js.LICENSE.txt"
+    "static/css/main.9e888602.chunk.css.map": "/DashboardHotelMiranda/static/css/main.9e888602.chunk.css.map",
+    "static/js/2.129b68cb.chunk.js.LICENSE.txt": "/DashboardHotelMiranda/static/js/2.129b68cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ce75374.js",
-    "static/js/2.7e58947f.chunk.js",
-    "static/css/main.efc68831.chunk.css",
-    "static/js/main.c47ff7fb.chunk.js"
+    "static/js/runtime-main.c8377ad0.js",
+    "static/js/2.129b68cb.chunk.js",
+    "static/css/main.9e888602.chunk.css",
+    "static/js/main.54136c2b.chunk.js"
   ]
 }
