@@ -71,3 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+### Deployment and Workflows
+Pending to be added the infomration with regards to:
+- Deployment on GitHub Pages
+- Deployment on Azure static Web App
+- Deployment on Azure App Service
+
