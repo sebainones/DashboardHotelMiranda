@@ -13,7 +13,7 @@ function Login(props) {
         },
         {
             'email': 'pedro@gmail.com',
-            'pass': 'deltoro'
+            'pass': 'picapiedra'
         },
     ]
 
